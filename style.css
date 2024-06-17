@@ -100,7 +100,6 @@ nav{
 #center{
     height: 65vh;
     width: 100%;
-    /* background-color: orange; */
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -200,7 +199,7 @@ nav{
     width: 36vw;
     height: 26vw;
     left: 0;
-    top: 18vh;
+    bottom: 71vw;
 }
 
 #zero1{
@@ -292,8 +291,8 @@ nav{
 }
 
 #gola{
-    height: 60px;
-    width: 60px;
+    height: 4.5vw;
+    width: 4.5vw;
     border-radius: 50%;
     display: inline-block;
     margin: 0.8vw 1.8vw;
@@ -394,8 +393,8 @@ nav{
 }
 
 #page3 #up-text #dot{
-    height: 20px;
-    width: 20px;
+    height: 1.3vw;
+    width: 1.3vw;
     border-radius: 50%;
     background: linear-gradient(rgba(74, 3, 181, 0.727), rgba(0, 38, 255, 0.805));
 }
@@ -442,3 +441,50 @@ nav{
     display: none;
     background-size: cover;
 }
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 4vw 0;
+}
+
+#black-box{
+    background-color: black;
+    border-radius: 30px;
+    height: 80vh;
+    width: 90%;
+    margin: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#left-2{
+    padding: 8vw;
+    padding-bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    position: relative;
+}
+.page4-element{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.7vw;
+}
+
+.page4-element h1{
+    color: #EFEAE3;
+    font-size: 4vw;
+}
+
+
+.page4-element .line{
+    height: 4.2vw;
+    width: 5px;
+    background-color: red;
+}
+
