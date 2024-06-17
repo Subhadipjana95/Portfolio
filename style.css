@@ -373,15 +373,16 @@ nav{
     }
 }
 
-
 #page3{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
+    padding: 4vw 0;
 }
 
 #page3 #up-text{
     padding-left: 3vw;
+    padding-bottom: 6vw;
     display: flex;
     align-items: center;
     gap: 0.8vw;
@@ -399,8 +400,45 @@ nav{
     background: linear-gradient(rgba(74, 3, 181, 0.727), rgba(0, 38, 255, 0.805));
 }
 
-#page3 h1{
-    text-align: center;
-    margin-top: 25vw;
-    font-size: 4vw;
+.elem{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #0000003c;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(74, 3, 181, 0.727), rgba(0, 38, 255, 0.805));
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
+}
+
+.elem:hover .overlay{
+    top: 0;
+}
+
+#fixed-images{
+    height: 28vw;
+    width: 24vw;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
 }
