@@ -520,6 +520,7 @@ nav{
 
 #pe1:hover h1{
     color: #EFEAE3;
+    scale: 1.05;
 }
 
 #pe1:hover .line{
@@ -529,6 +530,7 @@ nav{
 
 #pe2:hover h1{
     color: #EFEAE3;
+    scale: 1.05;
 }
 
 #pe2:hover .line{
@@ -538,6 +540,7 @@ nav{
 
 #pe3:hover h1{
     color: #EFEAE3;
+    scale: 1.05;
 }
 
 #pe3:hover .line{
