@@ -828,12 +828,12 @@ nav #menu{
 }
 
 #full-scr {
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     background-color: #00000070;
     position: fixed;
     z-index: 99;
-    top: -110%;
+    top: -115%;
     transition: all ease 0.6s;
 }
 
