@@ -34,3 +34,18 @@ function swiperAnimation(){
 page3Animation()
 swiperAnimation()
     
+var menu = document.querySelector("#menu")
+var fullScr = document.querySelector("#full-scr")
+var navImg = document.querySelector("nav img")
+var flag = 0
+menu.addEventListener("click", function(){
+    if (flag == 0) {
+        fullScr.style.top = 0
+        navImg.style.opacity = 0
+        flag = 1
+    }else {
+        fullScr.style.top = "-110%"
+        navImg.style.opacity = 1
+        flag = 0
+    }
+})

@@ -49,18 +49,23 @@ body {
     position: relative;
 }
 
-img {
-    height: 100px;
-    width: 85px;
-    mix-blend-mode: multiply;
-}
-
 nav {
-    padding: 2vw 0;
+    padding: 2.2vw 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 100;
+}
+
+#page1 nav img {
+    height: 6vw;
+    width: 5vw;
+}
+
+nav #menu{
+    display: none;
 }
 
 #nav-button {
@@ -70,12 +75,12 @@ nav {
 }
 
 #nav-button h4 {
-    padding: 10px 20px;
+    padding: 0.8vw 1.6vw;
     border: 1px solid #0000003c;
     border-radius: 50px;
     font-weight: 500;
     color: #000000bb;
-    font-size: 18px;
+    font-size: 1.3vw;
     position: relative;
     transition: all ease 0.4s;
     overflow: hidden;
@@ -130,7 +135,7 @@ nav {
     font-size: 10vw;
     text-align: right;
     line-height: 9vw;
-    letter-spacing: -5px;
+    letter-spacing: -0.5vw;
     margin-bottom: 2vw;
 }
 
@@ -418,7 +423,7 @@ nav {
 }
 
 .elem {
-    height: 100px;
+    height: 7vw;
     width: 100%;
     border-bottom: 1px solid #0000003c;
     overflow: hidden;
@@ -465,13 +470,11 @@ nav {
     height: 3vw;
     width: 12vw;
     padding: 1vw;
-    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid #0000003c;
     border-radius: 50px;
-    font-size: 18px;
     position: relative;
     transition: all ease 0.4s;
     overflow: hidden;
@@ -494,9 +497,20 @@ nav {
     border-radius: 0;
 }
 
+#page3-button h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3-button i {
+    font-size: 1.3vw;
+}
+
 #page3-button a {
     text-decoration: none;
     color: #000000bb;
+    font-size: 1.3vw;
 }
 
 #page3-button:hover h4 a {
@@ -652,13 +666,13 @@ nav {
     padding: 0 2vw;
 }
 
-.swiper-slide p{
+.swiper-slide p {
     font-weight: 200;
     font-size: 1.1vw;
     margin: 1vw 0;
 }
 
-.swiper-slide img{
+.swiper-slide img {
     height: 6vw;
     width: 6vw;
 }
@@ -811,4 +825,294 @@ nav {
         filter: blur(70px);
         transform: translate(-13%, 8%) skew(5deg);
     }
+}
+
+#full-scr {
+    height: 110vh;
+    width: 100vw;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #00000070;
+    position: fixed;
+    z-index: 99;
+    top: -110%;
+    transition: all ease 0.6s;
+}
+
+#menu-exp {
+    height: 50%;
+    width: 100%;
+    background-color: #EFEAE3;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all ease 0.8s;
+}
+
+#menu-exp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 15vw 4vw 0 0;
+    line-height: 15vw;
+}
+
+#menu-exp h1{
+    color: black;
+    font-size: 15vw;
+    
+}
+
+@media (max-width: 600px){
+    #main{
+        overflow: hidden; 
+    }
+
+    #page1 {
+        min-height: 100vh;
+        width: 100vw;
+        padding: 0vw;
+        background-color: #EFEAE3;
+        position: relative;
+    }
+
+    nav {
+        padding: 8vw 5vw;
+        background-color: #EFEAE3;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+    }
+
+    #page1 nav img {
+        height: 10vw;
+        width: 8vw;
+        transition: all ease 0.2s;
+    }
+
+    nav #menu{
+        display: block;
+        padding: 2vw 4vw 2vw 4vw;
+        border: 1px solid #0000003c;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2vw;
+        
+    }
+    nav #menu h3 {
+        display: block;
+        font-size: 4vw;
+        font-weight: 200;
+    }
+
+    nav #menu i{
+        display: block;
+        font-size: 4vw;
+    }
+
+    #nav-button {
+        display: none;
+    }
+
+    #center {
+        height: 62vh;
+        width: 100vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        border-bottom: 1px solid #0000003c;
+        padding: 3vw 4vw 6vw 4vw;
+    }
+
+    #left h3 {
+        width: 70%;
+        font-size: 4.2vw;
+        line-height: 4vw;
+        z-index: 10;
+    }
+
+    #center h1 {
+        font-size: 15vw;
+        text-align: right;
+        line-height: 14vw;
+        letter-spacing: -0.1vw;
+    }
+
+    #page1 video {
+        position: relative;
+        border-radius: 25px;
+        margin-top: 5vw;
+        width: 90%;
+        height: 55vh;
+        margin-left: 5%;
+        object-fit: cover;
+        object-position: center;
+        z-index: 9;
+    }
+
+    #hero-shape1 {
+        position: absolute;
+        width: 72vw;
+        height: 52vw;
+        right: -5%;
+        top: 73vh;
+    }
+
+    #hero1 {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to top right, rgba(91, 14, 208, 0.689), rgba(0, 26, 255, 0.824));
+    }
+
+    #hero2 {
+        height: 50vw;
+        width: 50vw;
+        background: linear-gradient(rgba(90, 7, 214, 0.713), rgba(0, 38, 255, 0.805));
+    }
+
+    #hero3 {
+        height: 50vw;
+        width: 50vw;
+        background: linear-gradient(to top left, rgba(74, 3, 181, 0.66), rgba(15, 37, 237, 0.766));
+    }
+
+    #hero-shape2 {
+        position: absolute;
+        width: 56vw;
+        height: 42vw;
+        left: -5%;
+        top: 30vh;
+    }
+
+    #zero1 {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to top right, rgba(74, 3, 181, 0.455), rgba(0, 26, 255, 0.812));
+    }
+
+    #zero2 {
+        height: 35vw;
+        width: 35vw;
+        background: linear-gradient(rgba(3, 77, 181, 0.49), rgba(0, 81, 255, 0.571));
+    }
+
+    #zero3 {
+        height: 35vw;
+        width: 35vw;
+        background: linear-gradient(rgba(3, 77, 181, 0.49), rgba(0, 81, 255, 0.571));
+    }
+
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding: 8vw 0 10vw 0;
+        position: relative;
+    }
+
+    #moving-text h1 {
+        font-size: 12vw;
+        display: inline-block;
+    }
+    
+    #gola {
+        height: 7vw;
+        width: 7vw;
+        margin: 0.8vw 1.8vw;
+    }
+    
+    #page2-bottom {
+        height: 80vh;
+        width: 100%;
+        padding-top: 10vw;
+        background-color: #EFEAE3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    #page2-bottom h1 {
+        font-size: 8vw;
+        width: 95%;
+        line-height: 7vw;
+        z-index: 9;
+    }
+    
+    #bottom-part2 {
+        width: 95%;
+        padding: 0 13.5vw;
+        position: absolute;
+        z-index: 9;
+        padding-top: 10vw;
+    }
+    
+    #bottom-part2 img {
+        width: 40vw;
+        height: 42vw;
+        border-radius: 10px;
+    }
+    
+    #bottom-part2 p {
+        font-weight: 200;
+        margin-top: 2vw;
+        margin-bottom: 10vw;
+        font-size: 3.8vw;
+    }
+    
+    #page2 #circle {
+        height: 85vw;
+        width: 85vw;
+        position: absolute;
+        right: -5%;
+        top: 35%;
+        background: linear-gradient(to top right, rgba(74, 3, 181, 0.945), rgba(7, 62, 244, 0.962));
+    }
+
+    #page3 {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding: 4vw 0;
+    }
+    
+    #page3 #up-text {
+        padding-left: 3vw;
+        padding-bottom: 6vw;
+        padding-top: 30vw;
+    }
+    
+    #page3 #up-text p {
+        font-size: 3vw;
+    }
+    
+    #page3 #up-text #dot {
+        height: 2.2vw;
+        width: 2.2vw;
+    }
+    #page6{
+        height: 100vh;
+        width: 100%;
+    }
+
+    #footer {
+        height: 120vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 9;
+        background-color: black;
+        color: #EFEAE3;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding: 0 3vw;
+    }
+
+
 }
