@@ -44,7 +44,7 @@ menu.addEventListener("click", function(){
         navImg.style.opacity = 0
         flag = 1
     }else {
-        fullScr.style.top = "-110%"
+        fullScr.style.top = "-115%"
         navImg.style.opacity = 1
         flag = 0
     }
