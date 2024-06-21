@@ -828,10 +828,8 @@ nav #menu{
 }
 
 #full-scr {
-    height: 110vh;
+    height: 100vh;
     width: 100vw;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
     background-color: #00000070;
     position: fixed;
     z-index: 99;
