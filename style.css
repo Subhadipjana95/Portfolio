@@ -828,7 +828,7 @@ nav #menu{
 }
 
 
-/* @media (max-width: 600px){
+@media (max-width: 600px){
     #main{
         overflow: hidden; 
     }
@@ -1114,4 +1114,4 @@ nav #menu{
     }
 
 
-} */
+} 
