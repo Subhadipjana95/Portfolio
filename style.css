@@ -68,6 +68,14 @@ nav #menu{
     display: none;
 }
 
+#full-scr{
+    display: none;
+}
+
+#menu-exp{
+    display: none;
+}
+
 #nav-button {
     display: flex;
     align-items: center;
@@ -566,6 +574,8 @@ nav #menu{
     min-width: 50%;
     position: absolute;
     top: 0;
+    object-fit: cover;
+    object-position: center;
     left: 50%;
 }
 
@@ -829,6 +839,7 @@ nav #menu{
 
 
 @media (max-width: 600px){
+
     #main{
         overflow: hidden; 
     }
@@ -842,7 +853,8 @@ nav #menu{
     }
 
     #full-scr {
-        height: 110vh;
+        display: block;
+        height: 100vh;
         width: 100vw;
         background-color: #00000070;
         position: fixed;
@@ -852,6 +864,7 @@ nav #menu{
     }
     
     #menu-exp {
+        display: block;
         height: 50%;
         width: 100%;
         background-color: #EFEAE3;
@@ -1113,5 +1126,54 @@ nav #menu{
         padding: 0 3vw;
     }
 
-
 } 
+
+
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1{
+    font-size: 5vw;
+    color: transparent;
+    background: linear-gradient(to top right, rgba(86, 2, 213, 0.897), rgba(30, 82, 255, 0.993));
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+
+#loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
