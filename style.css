@@ -1177,3 +1177,9 @@ nav #menu{
         opacity: 0;
     }
 }
+
+@media (max-width: 600px) {
+    #loader h1{
+        font-size: 13vw;
+    }
+}
