@@ -1419,3 +1419,258 @@ nav #menu {
         font-size: 13vw;
     }
 }
+
+@media (max-width: 430px),(max-height: 930px) {
+    #menu-exp {
+        height: 40%;
+    }
+
+    #menu-exp {
+        padding: 12vw 6vw 0 0;
+        line-height: 15vw;
+    }
+
+    #menu-exp h1 {
+        font-size: 15vw;
+
+    }
+
+    #page1 nav img {
+        height: 12vw;
+        width: 10vw;
+    }
+
+    #center {
+        height: 52vh;
+    }
+
+    #left h3 {
+        width: 80%;
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+
+    #center h1 {
+        font-size: 18vw;
+        line-height: 16.5vw;
+    }
+
+    #page1 video {
+        height: 40vh;
+    }
+
+    #hero-shape1 {
+        top: 58vh;
+    }
+
+    #hero-shape2 {
+        width: 60vw;
+        height: 45vw;
+        left: -8%;
+        top: 22vh;
+    }
+
+    #page2 {
+        min-height: 80vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding: 8vw 0;
+        position: relative;
+    }
+
+    #page2-bottom {
+        height: 70vh;
+    }
+
+    #bottom-part2 {
+        width: 95%;
+        padding: 0 13.5vw;
+    }
+
+    #page2 #circle {
+        height: 80vw;
+        width: 80vw;
+        top: 32%;
+    }
+
+    #page3 {
+        min-height: 140vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding: 4vw 0;
+    }
+
+    #page3 #up-text {
+        padding-left: 8vw;
+        padding-top: 15vw;
+    }
+
+    #page3 #up-text p {
+        font-size: 4vw;
+    }
+
+    #page3 #up-text #dot {
+        height: 3vw;
+        width: 3vw;
+        margin-right: 1.5vw;
+    }
+
+    #card-container {
+        height: 100%;
+    }
+
+    #card-container .card {
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4vw 6vw;
+    }
+
+    #card-container .card .img-box {
+        width: 85%;
+        height: 90%;
+    }
+
+    #card-container .card h2 {
+        font-size: 5.6vw;
+        width: 100%;
+        padding: 1.5vw 8vw;
+    }
+
+    #page3-button {
+        height: 8vw;
+        width: 30vw;
+        margin-left: 8vw;
+    }
+
+    #page4 {
+        min-height: 80vh;
+    }
+
+    #black-box {
+        height: 70vh;
+    }
+
+    #left-2 {
+        background-color: black;
+        width: 100%;
+        height: 45%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 8vw;
+    }
+
+    #right2 {
+        width: 100%;
+        height: 55%;
+    }
+
+    #right2 video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .page4-element {
+        padding-left: 8vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.4vw;
+    }
+
+    .page4-element h1 {
+        font-size: 7vw;
+    }
+
+    .page4-element .line {
+        height: 5.5vw;
+        width: 0.8vw;
+    }
+
+    #left-2 p {
+        font-size: 2.8vw;
+        line-height: 2.8vw;
+    }
+
+    #pe1:hover .line {
+        height: 5.9vw;
+    }
+
+    #pe2:hover .line {
+        height: 5.9vw;
+    }
+
+    #pe3:hover .line {
+        height: 5.9vw;
+    }
+
+    #page5 {
+        height: 35vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding: 0 2vw 12vw 2vw;
+    }
+
+    #page5 #up-text {
+        padding: 5vw 0 15vw 5vw;
+    }
+
+    #page5 #up-text p {
+        font-size: 4vw;
+    }
+
+    #page5 #up-text #dot {
+        height: 3vw;
+        width: 3vw;
+        margin-right: 1vw;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 50%;
+    }
+
+    .swiper-slide {
+        border: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-slide p {
+        display: none;
+    }
+
+    .swiper-slide img {
+        height: 25vw;
+        width: 25vw;
+    }
+
+    #page6 {
+        height: 48vh;
+        width: 100%;
+    }
+
+    #footer-shape1 {
+        position: absolute;
+        width: 100vw;
+        height: 80vw;
+        right: -10%;
+        bottom: 35%;
+    }
+
+    #footer-shape2 {
+        position: absolute;
+        width: 95vw;
+        height: 100vw;
+        left: -14%;
+        bottom: 37%;
+    }
+
+}
