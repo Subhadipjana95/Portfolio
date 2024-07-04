@@ -1420,7 +1420,7 @@ nav #menu {
     }
 }
 
-@media (max-width: 430px),(max-height: 930px) {
+@media (max-width: 430px){
     #menu-exp {
         height: 40%;
     }
