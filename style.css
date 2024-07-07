@@ -41,6 +41,10 @@ body {
     z-index: 10;
 }
 
+#main::-webkit-scrollbar{
+    display: block;
+}
+
 #page1 {
     min-height: 100vh;
     width: 100%;
@@ -751,18 +755,41 @@ nav #menu {
 }
 
 #fot-right {
+    width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
+    padding-right: 2vw;
 }
 
 #fot-right p {
     color: #EFEAE3;
-    padding-right: 2vw;
-    width: 60%;
+    width: 80%;
     font-weight: 200;
     font-size: 1.5vw;
+}
+.input-cont{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #EFEAE3;
+    padding-bottom: 10px;
+    margin: 2vw 2vw 0 0;
+    
+}
+.input-cont>input{
+    background-color: transparent;
+    font-size: 1.3vw;
+    border: none;
+}
+.input-cont>input::-webkit-input-placeholder{
+    color: #EFEAE3;
+    font-weight: 100;
+}
+.input-cont>input:focus{
+    outline: none;
 }
 
 #footer-bottom {
