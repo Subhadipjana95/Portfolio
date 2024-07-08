@@ -29,6 +29,9 @@
     box-sizing: border-box;
     font-family: "nue";
 }
+a{
+    text-decoration: none;
+}
 
 html,
 body {
@@ -41,7 +44,7 @@ body {
     z-index: 10;
 }
 
-#main::-webkit-scrollbar{
+#main::-webkit-scrollbar {
     display: block;
 }
 
@@ -677,25 +680,33 @@ nav #menu {
     background: linear-gradient(rgba(74, 3, 181, 0.727), rgba(0, 38, 255, 0.805));
 }
 
-.swiper {
+#swiper2{
+    display: none;
+}
+
+#swiper1{
+    display: block;
+}
+
+#swiper1>.swiper {
     width: 100%;
     height: 100%;
     padding: 0 0 5vw 0;
 }
 
-.swiper-slide {
+#swiper1>.mySwiper>.swiper-wrapper>.swiper-slide {
     width: 30%;
     border-left: 1px solid #0000003c;
     padding: 0 2vw;
 }
 
-.swiper-slide p {
+#swiper1>.mySwiper>.swiper-wrapper>.swiper-slide>p {
     font-weight: 200;
     font-size: 1.1vw;
     margin: 1vw 0;
 }
 
-.swiper-slide img {
+#swiper1>.mySwiper>.swiper-wrapper>.swiper-slide>img {
     height: 7vw;
     width: 7vw;
 }
@@ -769,7 +780,8 @@ nav #menu {
     font-weight: 200;
     font-size: 1.5vw;
 }
-.input-cont{
+
+.input-cont {
     width: 80%;
     display: flex;
     align-items: center;
@@ -777,18 +789,21 @@ nav #menu {
     border-bottom: 1px solid #EFEAE3;
     padding-bottom: 10px;
     margin: 2vw 2vw 0 0;
-    
+
 }
-.input-cont>input{
+
+.input-cont>input {
     background-color: transparent;
     font-size: 1.3vw;
     border: none;
 }
-.input-cont>input::-webkit-input-placeholder{
+
+.input-cont>input::-webkit-input-placeholder {
     color: #EFEAE3;
     font-weight: 100;
 }
-.input-cont>input:focus{
+
+.input-cont>input:focus {
     outline: none;
 }
 
@@ -922,7 +937,8 @@ nav #menu {
         font-size: 15vw;
 
     }
-    #menu-exp h1 a{
+
+    #menu-exp h1 a {
         text-decoration: none;
         color: black;
     }
@@ -1453,7 +1469,7 @@ nav #menu {
     }
 }
 
-@media (max-width: 430px){
+@media (max-width: 430px) {
     #menu-exp {
         height: 40%;
     }
@@ -1643,7 +1659,7 @@ nav #menu {
     }
 
     #page5 {
-        height: 35vh;
+        height: 45vh;
         width: 100%;
         background-color: #EFEAE3;
         padding: 0 2vw 12vw 2vw;
@@ -1663,27 +1679,63 @@ nav #menu {
         margin-right: 1vw;
     }
 
-    .swiper {
-        width: 100%;
-        height: 50%;
-    }
-
-    .swiper-slide {
-        border: none;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .swiper-slide p {
+    #swiper1{
         display: none;
     }
 
-    .swiper-slide img {
-        height: 25vw;
-        width: 25vw;
+    #swiper2{
+        display: block;
+        margin-bottom: 10vw;
     }
+
+    #swiper2>.swiper {
+        width: 45vw;
+        height: 60vw;
+        margin-bottom: 15vw;
+    }
+
+    #swiper2>.mySwiper>.swiper-wrapper>.swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #d6cece;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 36vw;
+        height: 100%;
+        background: linear-gradient(to top right, black, rgb(88, 15, 198), rgb(57, 103, 255), #EFEAE3);
+    }
+
+    #swiper2>.mySwiper>.swiper-wrapper>.swiper-slide>img {
+        border-radius: 20px;
+        height: 35vw;
+        width: 33vw;
+    }
+    
+/* 
+    #swiper2>.mySwiper>.swiper-wrapper>.swiper-slide:nth-child(1n) {
+        background-color: rgb(189, 67, 14);
+    }
+
+    #swiper2>.mySwiper>.swiper-wrapper>.swiper-slide:nth-child(2n) {
+        background-color: rgb(0, 140, 255);
+    }
+
+    #swiper2>.mySwiper>.swiper-wrapper>.swiper-slide:nth-child(3n) {
+        background-color: rgb(10, 184, 111);
+    }
+
+    #swiper2>.mySwiper>.swiper-wrapper>.swiper-slide:nth-child(4n) {
+        background-color: rgb(211, 122, 7);
+    }
+
+    #swiper2>.mySwiper>.swiper-wrapper>.swiper-slide:nth-child(5n) {
+        background-color: rgb(118, 163, 12);
+    }
+
+    #swiper2>.mySwiper>.swiper-wrapper>.swiper-slide:nth-child(6n) {
+        background-color: rgb(180, 10, 47);
+    } */
 
     #page6 {
         height: 48vh;
@@ -1705,18 +1757,21 @@ nav #menu {
         left: -14%;
         bottom: 37%;
     }
+
     #fot-right {
         width: 50%;
     }
-    
+
     #fot-right p {
         width: 80%;
         font-size: 3vw;
     }
-    .input-cont{
+
+    .input-cont {
         width: 80%;
     }
-    .input-cont>input{
+
+    .input-cont>input {
         width: 100%;
         font-size: 3vw;
     }

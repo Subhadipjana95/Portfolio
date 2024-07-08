@@ -23,13 +23,20 @@ function page3Animation() {
     })
 }
 
-function swiperAnimation() {
-    var swiper = new Swiper(".mySwiper", {
+function swiperAnimation1() {
+    var swiper2 = new Swiper("#swiper1>.mySwiper", {
         slidesPerView: 2.6,
         spaceBetween: 30,
         freeMode: true,
     });
 }
+function swiperAnimation2(){
+    var swiper = new Swiper("#swiper2>.mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+    });
+}
+
 
 function menuAnimation() {
     var menu = document.querySelector("#menu")
@@ -58,9 +65,12 @@ function loaderAnimation() {
 }
 
 page3Animation()
-swiperAnimation()
+swiperAnimation1()
+swiperAnimation2()
 menuAnimation()
 loaderAnimation()
+
+
 
 
 
