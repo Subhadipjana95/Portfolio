@@ -1699,5 +1699,43 @@ nav #menu {
         left: -14%;
         bottom: 37%;
     }
-
+    #fot-right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-right: 2vw;
+    }
+    
+    #fot-right p {
+        color: #EFEAE3;
+        width: 80%;
+        font-weight: 200;
+        font-size: 3vw;
+    }
+    .input-cont{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #EFEAE3;
+        padding-bottom: 10px;
+        text-align: start;
+        /* margin: 2vw 2vw 0 0; */
+        
+    }
+    .input-cont>input{
+        background-color: transparent;
+        width: 100%;
+        font-size: 3vw;
+        border: none;
+    }
+    .input-cont>input::-webkit-input-placeholder{
+        color: #EFEAE3;
+        font-weight: 100;
+    }
+    .input-cont>input:focus{
+        outline: none;
+    }
 }
